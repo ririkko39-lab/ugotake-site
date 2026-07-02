@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ウゴノタケノコ | 高千穂高校生の探究を全力応援する団体</title>
+<meta name="description" content="ウゴノタケノコは、宮崎県高千穂町で高千穂高校生の探究活動を支援する民間団体です。放置竹林から生まれた「高千穂メンマ」や竹灯籠づくり、各種コンテスト挑戦をサポート。賛助会員・寄付も募集中!">
+<meta property="og:title" content="ウゴノタケノコ | 高千穂高校生の探究を全力応援">
+<meta property="og:description" content="放置竹林を宝物に。高千穂高校生の探究活動を地域の大人が全力サポート。地方創生☆政策アイデアコンテスト2025 全国優秀賞ほか受賞多数。">
+<meta property="og:image" content="https://lh3.googleusercontent.com/d/1nuGWFXB0Js7sh-JtEuW3c84yfH4LwL7J=w1200">
+<link rel="icon" href="https://lh3.googleusercontent.com/d/1_B7SfcnwZ17pqmFjmcQEkc1CgqXP69Ii=w64">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#2f9e4f;
+  --green-dark:#1f7a3a;
+  --green-light:#e8f5e9;
+  --orange:#ff8a3d;
+  --orange-dark:#f06f1f;
+  --yellow:#ffd54f;
+  --cream:#fdfaf1;
+  --ink:#28372c;
+  --white:#ffffff;
+  --radius:22px;
+  --shadow:0 8px 24px rgba(40,55,44,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{
+  font-family:"M PLUS Rounded 1c","Zen Maru Gothic","Hiragino Maru Gothic ProN",sans-serif;
+  color:var(--ink);background:var(--cream);line-height:1.9;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* ===== header ===== */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(253,250,241,.92);backdrop-filter:blur(8px);
+  border-bottom:3px solid var(--green);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.1rem}
+.brand img{width:38px;height:38px;border-radius:10px;background:#fff}
+.brand span small{display:block;font-size:.6rem;font-weight:700;color:var(--green-dark);line-height:1.2}
+.menu{display:flex;gap:4px;list-style:none;align-items:center}
+.menu a{font-weight:700;font-size:.86rem;padding:8px 12px;border-radius:999px;transition:.2s}
+.menu a:hover{background:var(--green-light);color:var(--green-dark)}
+.menu .cta{background:var(--orange);color:#fff;box-shadow:0 3px 0 var(--orange-dark)}
+.menu .cta:hover{background:var(--orange-dark);color:#fff;transform:translateY(1px);box-shadow:0 2px 0 var(--orange-dark)}
+.hamburger{display:none;background:none;border:none;font-size:1.7rem;color:var(--green-dark);cursor:pointer}
+
+/* ===== hero ===== */
+.hero{
+  position:relative;min-height:92vh;display:flex;align-items:center;
+  background:linear-gradient(rgba(20,45,25,.45),rgba(20,45,25,.55)),
+    url('https://lh3.googleusercontent.com/d/1nuGWFXB0Js7sh-JtEuW3c84yfH4LwL7J=w1920') center/cover no-repeat;
+  color:#fff;padding:120px 0 90px;
+}
+.hero-inner{max-width:1080px;margin:0 auto;padding:0 20px}
+.hero .badge{
+  display:inline-block;background:var(--yellow);color:var(--ink);
+  font-weight:800;font-size:.85rem;padding:6px 18px;border-radius:999px;margin-bottom:18px;
+  transform:rotate(-2deg);box-shadow:var(--shadow);
+}
+.hero h1{
+  font-weight:900;font-size:clamp(2rem,6vw,3.6rem);line-height:1.35;
+  text-shadow:0 4px 18px rgba(0,0,0,.45);margin-bottom:16px;
+}
+.hero h1 em{font-style:normal;color:var(--yellow)}
+.hero p.lead{font-size:clamp(.95rem,2.2vw,1.15rem);font-weight:700;max-width:640px;text-shadow:0 2px 10px rgba(0,0,0,.5);margin-bottom:28px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  display:inline-block;font-weight:800;border-radius:999px;padding:14px 30px;font-size:1rem;
+  transition:.15s;text-align:center;
+}
+.btn-orange{background:var(--orange);color:#fff;box-shadow:0 5px 0 var(--orange-dark)}
+.btn-orange:hover{transform:translateY(2px);box-shadow:0 3px 0 var(--orange-dark)}
+.btn-white{background:#fff;color:var(--green-dark);box-shadow:0 5px 0 #cfd8cf}
+.btn-white:hover{transform:translateY(2px);box-shadow:0 3px 0 #cfd8cf}
+.hero-stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.stat{
+  background:rgba(255,255,255,.94);color:var(--ink);border-radius:16px;
+  padding:10px 18px;font-size:.82rem;font-weight:700;box-shadow:var(--shadow);
+}
+.stat b{display:block;color:var(--green-dark);font-size:1.15rem;font-weight:900;line-height:1.3}
+
+/* ===== section base ===== */
+section{padding:84px 0}
+.sec-head{text-align:center;margin-bottom:48px}
+.sec-head .en{
+  display:inline-block;font-weight:900;color:var(--orange);letter-spacing:.18em;
+  font-size:.8rem;text-transform:uppercase;margin-bottom:6px;
+}
+.sec-head h2{font-weight:900;font-size:clamp(1.5rem,4vw,2.2rem);line-height:1.4}
+.sec-head h2 .marker{background:linear-gradient(transparent 62%,var(--yellow) 62%)}
+
+/* ===== about ===== */
+#about{background:var(--white)}
+.about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center}
+.about-text p{margin-bottom:16px;font-weight:500}
+.about-text .name{font-weight:900;color:var(--green-dark)}
+.goals{display:grid;gap:14px;margin-top:22px}
+.goal{
+  display:flex;gap:14px;align-items:flex-start;background:var(--green-light);
+  border-radius:var(--radius);padding:16px 20px;
+}
+.goal .num{
+  flex-shrink:0;width:38px;height:38px;border-radius:50%;background:var(--green);
+  color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center;font-size:1.05rem;
+  box-shadow:0 3px 0 var(--green-dark);
+}
+.goal p{font-weight:700;font-size:.95rem;line-height:1.7}
+.about-photo{position:relative}
+.about-photo img{border-radius:var(--radius);box-shadow:var(--shadow)}
+.about-photo .sticker{
+  position:absolute;top:-18px;right:-8px;background:var(--yellow);font-weight:900;
+  padding:10px 16px;border-radius:14px;transform:rotate(4deg);font-size:.85rem;box-shadow:var(--shadow);
+}
+
+/* ===== projects ===== */
+#projects{background:linear-gradient(180deg,var(--cream) 0%,#f2f8ee 100%)}
+.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{
+  background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);
+  display:flex;flex-direction:column;transition:.25s;
+}
+.card:hover{transform:translateY(-6px) rotate(-.4deg)}
+.card .thumb{aspect-ratio:16/10;overflow:hidden;background:var(--green-light)}
+.card .thumb img{width:100%;height:100%;object-fit:cover}
+.card .body{padding:20px 22px 26px;flex:1}
+.card .tag{
+  display:inline-block;background:var(--green);color:#fff;font-size:.72rem;font-weight:800;
+  padding:3px 12px;border-radius:999px;margin-bottom:10px;
+}
+.card.orange .tag{background:var(--orange)}
+.card h3{font-weight:900;font-size:1.12rem;margin-bottom:8px;line-height:1.5}
+.card p{font-size:.88rem;font-weight:500}
+.mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
+.mini{
+  background:#fff;border:3px dashed var(--green);border-radius:var(--radius);
+  padding:20px 18px;text-align:center;
+}
+.mini .icon{font-size:1.9rem;line-height:1;margin-bottom:8px}
+.mini h4{font-weight:900;font-size:.98rem;margin-bottom:4px}
+.mini p{font-size:.8rem;font-weight:500}
+
+/* ===== awards ===== */
+#awards{background:var(--green-dark);color:#fff;position:relative;overflow:hidden}
+#awards::before{
+  content:"";position:absolute;inset:0;opacity:.07;
+  background:radial-gradient(circle at 20% 20%,#fff 2px,transparent 2.5px) 0 0/34px 34px;
+}
+#awards .sec-head h2,#awards .sec-head .en{position:relative}
+#awards .sec-head .en{color:var(--yellow)}
+.award-hero{
+  position:relative;background:linear-gradient(135deg,var(--yellow),#ffb74d);color:var(--ink);
+  border-radius:var(--radius);padding:30px 32px;margin-bottom:26px;box-shadow:0 10px 30px rgba(0,0,0,.25);
+  text-align:center;
+}
+.award-hero .trophy{font-size:2.4rem;line-height:1}
+.award-hero h3{font-weight:900;font-size:clamp(1.15rem,3vw,1.6rem);margin:6px 0 2px}
+.award-hero p{font-weight:800;font-size:.95rem}
+.award-hero .sub{font-weight:700;font-size:.8rem;opacity:.8}
+.award-list{position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.award{
+  background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.35);
+  border-radius:18px;padding:18px 22px;
+}
+.award .date{font-size:.75rem;font-weight:800;color:var(--yellow)}
+.award h4{font-weight:900;font-size:1rem;line-height:1.55;margin:2px 0}
+.award p{font-size:.8rem;font-weight:600;opacity:.9}
+
+/* ===== join ===== */
+#join .join-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.plan{
+  background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:36px 32px;text-align:center;position:relative;border-top:10px solid var(--green);
+}
+.plan.support{border-top-color:var(--orange)}
+.plan .who{
+  display:inline-block;font-weight:900;font-size:1.25rem;margin-bottom:4px;
+}
+.plan .for{font-size:.85rem;font-weight:700;color:#6b7a6e;margin-bottom:18px}
+.fees{background:var(--cream);border-radius:16px;padding:16px;margin-bottom:14px}
+.fee-row{display:flex;justify-content:space-between;align-items:baseline;padding:7px 10px;font-weight:700;font-size:.92rem}
+.fee-row+.fee-row{border-top:1.5px dashed #d8d2bd}
+.fee-row b{font-size:1.15rem;font-weight:900;color:var(--green-dark)}
+.plan.support .fee-row b{color:var(--orange-dark)}
+.plan .note{font-size:.78rem;font-weight:600;color:#6b7a6e;margin-bottom:18px}
+.plan .btn{width:100%}
+.btn-green{background:var(--green);color:#fff;box-shadow:0 5px 0 var(--green-dark)}
+.btn-green:hover{transform:translateY(2px);box-shadow:0 3px 0 var(--green-dark)}
+.donate{
+  margin-top:26px;background:var(--yellow);border-radius:var(--radius);
+  padding:22px 28px;text-align:center;font-weight:800;box-shadow:var(--shadow);
+}
+.donate a{text-decoration:underline;color:var(--green-dark)}
+
+/* ===== footer ===== */
+footer{background:var(--ink);color:#e8eee9;padding:60px 0 30px}
+.foot-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;margin-bottom:36px}
+.foot-brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:1.2rem;margin-bottom:14px}
+.foot-brand img{width:44px;height:44px;border-radius:12px;background:#fff}
+footer p{font-size:.85rem;font-weight:500}
+.foot-table{width:100%;border-collapse:collapse;font-size:.85rem}
+.foot-table th{
+  text-align:left;padding:9px 14px 9px 0;color:var(--yellow);font-weight:800;
+  white-space:nowrap;vertical-align:top;width:7.5em;
+}
+.foot-table td{padding:9px 0;font-weight:500}
+.foot-table tr+tr{border-top:1px solid rgba(255,255,255,.12)}
+.copy{text-align:center;font-size:.75rem;opacity:.65;border-top:1px solid rgba(255,255,255,.15);padding-top:22px}
+
+/* ===== reveal ===== */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.show{opacity:1;transform:none}
+
+/* ===== responsive ===== */
+@media(max-width:860px){
+  .about-grid,#join .join-grid,.foot-grid{grid-template-columns:1fr}
+  .proj-grid,.mini-grid{grid-template-columns:1fr 1fr}
+  .award-list{grid-template-columns:1fr}
+  .about-photo{order:-1}
+}
+@media(max-width:640px){
+  .menu{
+    position:fixed;top:64px;right:0;left:0;background:var(--cream);
+    flex-direction:column;padding:16px;gap:8px;border-bottom:3px solid var(--green);
+    display:none;
+  }
+  .menu.open{display:flex}
+  .menu a{display:block;width:100%;text-align:center;font-size:1rem;padding:12px}
+  .hamburger{display:block}
+  .proj-grid,.mini-grid{grid-template-columns:1fr}
+  section{padding:64px 0}
+  .hero{min-height:88vh}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <img src="https://lh3.googleusercontent.com/d/1_B7SfcnwZ17pqmFjmcQEkc1CgqXP69Ii=w96" alt="ウゴノタケノコのロゴ">
+      <span>ウゴノタケノコ<small>高千穂高校 課外活動団体</small></span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="メニュー">☰</button>
+    <ul class="menu" id="menu">
+      <li><a href="#about">私たちについて</a></li>
+      <li><a href="#projects">プロジェクト</a></li>
+      <li><a href="#awards">受賞歴</a></li>
+      <li><a href="#join">入会について</a></li>
+      <li><a class="cta" href="#join">応援する(賛助会員)</a></li>
+    </ul>
+  </div>
+</header>
+
+<div id="top"></div>
+
+<section class="hero" style="padding-top:140px">
+  <div class="hero-inner">
+    <span class="badge">宮崎県高千穂町・高千穂高校生の探究活動支援団体</span>
+    <h1>「やっかいもの」を、<br><em>たからもの</em>に変える<br>高校生がいる。</h1>
+    <p class="lead">放置竹林の幼竹が「高千穂メンマ」に。竹が灯籠に。アイデアが全国の賞に。<br>ウゴノタケノコは、高千穂高校生の探究活動を地域の大人が全力でサポートする民間団体です。</p>
+    <div class="hero-btns">
+      <a class="btn btn-orange" href="#join">活動を応援する</a>
+      <a class="btn btn-white" href="#projects">プロジェクトを見る</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><b>5件</b>コンテスト受賞(令和7年度)</div>
+      <div class="stat"><b>全国 優秀賞</b>地方創生☆政策アイデアコンテスト2025</div>
+      <div class="stat"><b>76パック完売</b>高千穂メンマ即売会</div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="en">About Us</span>
+      <h2><span class="marker">ウゴノタケノコ</span>ってなに?</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p><span class="name">ウゴノタケノコ(愛称:ウゴタケ)</span>は、高千穂高校の課外活動(探究活動)を支援するために2025年に立ち上がった民間団体です。</p>
+        <p>課外活動や探究活動を学校の括りだけでやると、色々と難しいこともある。だったら<b>地域の大人でサポートしちゃうよ!!</b> という団体です。フィールドワークの引率、コンテストの書類添削・プレゼン指導、活動資金の確保まで、生徒の「やってみたい」に伴走します。</p>
+        <div class="goals">
+          <div class="goal"><span class="num">1</span><p>探究的な学びの楽しさを、生徒のみなさんに実感してもらう</p></div>
+          <div class="goal"><span class="num">2</span><p>探究的な学びをサポートして進路に繋げる(コンテストで賞を取るなどの手段を通して)</p></div>
+          <div class="goal"><span class="num">3</span><p>探究的な学びを通して、その後の人生に必要な力を身につけてもらう</p></div>
+        </div>
+      </div>
+      <div class="about-photo reveal">
+        <img src="https://lh3.googleusercontent.com/d/12h73fqj1RM8d1DNRQj7edrFqfcN2aFMu=w900" alt="日之影町の竹細工資料館を見学する生徒" loading="lazy">
+        <span class="sticker">地域まるごとが教室!</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="en">Projects</span>
+      <h2>いま動いている<span class="marker">プロジェクト</span></h2>
+    </div>
+    <div class="proj-grid">
+      <article class="card reveal">
+        <div class="thumb"><img src="https://lh3.googleusercontent.com/d/1W8f-bcd05oiS5uJyf7oX94LOxXh7sWMU=w900" alt="幼竹を加工しメンマを仕込む様子" loading="lazy"></div>
+        <div class="body">
+          <span class="tag">看板プロジェクト</span>
+          <h3>高千穂メンマプロジェクト</h3>
+          <p>地域の悩みのタネ・放置竹林の幼竹を収穫して「高千穂メンマ」に加工。高千穂の高校生が「厄介者」を美味しくしました。収益は竹林整備と活動費に還元します。</p>
+        </div>
+      </article>
+      <article class="card orange reveal">
+        <div class="thumb"><img src="https://lh3.googleusercontent.com/d/1K83HdA-PwBokRMY_z7eMtBP_oSIXqaXR=w900" alt="高千穂メンマ即売会で接客する生徒たち" loading="lazy"></div>
+        <div class="body">
+          <span class="tag">76パック完売!</span>
+          <h3>高千穂メンマ即売会</h3>
+          <p>2025年11月、Aコープ高千穂店で即売会を開催し、76パックを完売。仕込みから販売・会計まで、生徒が本気の「商い」を体験しました。</p>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="thumb"><img src="https://lh3.googleusercontent.com/d/1XbZnF2wpzAGTkRoLg7CkLbfiqGbf5wPT=w900" alt="竹灯籠づくりワークショップ" loading="lazy"></div>
+        <div class="body">
+          <span class="tag">竹あかり</span>
+          <h3>竹灯籠プロジェクト</h3>
+          <p>切り出した竹を灯籠に加工して、まちを照らす。日之影町での竹合宿やフィールドワークで、地域の竹細工文化からも学んでいます。</p>
+        </div>
+      </article>
+    </div>
+    <div class="mini-grid">
+      <div class="mini reveal">
+        <div class="icon">🎬</div>
+        <h4>動画・情報発信</h4>
+        <p>動画作成プロジェクトや高千穂高校公式noteで、活動と高校の魅力を発信中。</p>
+      </div>
+      <div class="mini reveal">
+        <div class="icon">🏕️</div>
+        <h4>探究合宿</h4>
+        <p>全国の高校生を高千穂に集めた探究合宿を企画しています。</p>
+      </div>
+      <div class="mini reveal">
+        <div class="icon">🎯</div>
+        <h4>モルックラブ ほか</h4>
+        <p>高千穂高校モルックラブの活動など、生徒が本気で取り組みたいことを全力で応援します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="awards">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="en">Awards</span>
+      <h2>令和7年度の受賞歴</h2>
+    </div>
+    <div class="award-hero reveal">
+      <div class="trophy">🏆</div>
+      <h3>地方創生☆政策アイデアコンテスト2025<br>全国大会 優秀賞</h3>
+      <p>実質・全国2位!(2025年12月6日)</p>
+      <p class="sub">主催: 内閣府 地方創生推進室</p>
+    </div>
+    <div class="award-list">
+      <div class="award reveal">
+        <span class="date">2025.11.28</span>
+        <h4>地方創生☆政策アイデアコンテスト2025<br>九州経済産業局長賞</h4>
+        <p>地方審査(九州ブロック大会)/内閣府 地方創生推進室・九州経済産業局</p>
+      </div>
+      <div class="award reveal">
+        <span class="date">2025.12.21</span>
+        <h4>全国高校生MY PROJECT AWARD 2025 宮崎県Summit<br>Supporter Special Award</h4>
+        <p>宮崎県大会/全国高校生マイプロジェクト宮崎県事務局</p>
+      </div>
+      <div class="award reveal">
+        <span class="date">2026.2.26</span>
+        <h4>第2回(令和7年度)みどり戦略学生チャレンジ<br>九州農政局特別賞</h4>
+        <p>九州ブロック大会/農林水産省 九州農政局</p>
+      </div>
+      <div class="award reveal">
+        <span class="date">2026</span>
+        <h4>全国高校生MY PROJECT AWARD 2025<br>地域Summit特別賞</h4>
+        <p>地域Summit Advanced(地方大会)/全国高校生マイプロジェクト実行委員会</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="join">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="en">Join &amp; Support</span>
+      <h2>仲間になる・<span class="marker">応援する</span></h2>
+    </div>
+    <div class="join-grid">
+      <div class="plan reveal">
+        <span class="who">正会員</span>
+        <p class="for">高千穂高校に在学中の生徒</p>
+        <div class="fees">
+          <div class="fee-row"><span>入会金</span><b>500円</b></div>
+          <div class="fee-row"><span>年会費</span><b>100円</b></div>
+        </div>
+        <p class="note">探究やプロジェクトを本気でやって楽しみたい人、大歓迎。今の実力は関係ありません!</p>
+        <a class="btn btn-green" href="https://docs.google.com/forms/d/e/1FAIpQLSf4AZbgfVj0VNruWxPs-8l0JaAq8F0Ojw6HC5bNNCwCaW0pCQ/viewform" target="_blank" rel="noopener">入会フォームへ(生徒向け)</a>
+      </div>
+      <div class="plan support reveal">
+        <span class="who">賛助会員</span>
+        <p class="for">活動を応援してくださる個人・法人・団体</p>
+        <div class="fees">
+          <div class="fee-row"><span>個人 入会金 / 年会費</span><b>5,000円 / 3,000円</b></div>
+          <div class="fee-row"><span>法人・団体 入会金 / 年会費</span><b>30,000円 / 10,000円</b></div>
+        </div>
+        <p class="note">賛助会費は生徒のフィールドワーク・コンテスト挑戦・地域活動に活用し、活動報告をお届けします。</p>
+        <a class="btn btn-orange" href="https://docs.google.com/forms/d/17DQjklZpUMcfSzzHszqrdkTU2mHg7vpyuQ8XT1kvTto/viewform" target="_blank" rel="noopener">賛助会員の申し込みへ</a>
+      </div>
+    </div>
+    <div class="donate reveal">
+      ご寄付のみの応援も大歓迎です!
+      <a href="https://docs.google.com/forms/d/17DQjklZpUMcfSzzHszqrdkTU2mHg7vpyuQ8XT1kvTto/viewform" target="_blank" rel="noopener">寄付金の申し込みフォーム</a> からご連絡ください。
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <img src="https://lh3.googleusercontent.com/d/1_B7SfcnwZ17pqmFjmcQEkc1CgqXP69Ii=w96" alt="ウゴノタケノコのロゴ">
+          ウゴノタケノコ
+        </div>
+        <p>高千穂高校生の探究活動を支援する任意団体。地域の大人と高校生が一緒に、高千穂をもっとおもしろくしていきます。</p>
+      </div>
+      <table class="foot-table">
+        <tr><th>名称</th><td>任意団体 ウゴノタケノコ(愛称:ウゴタケ)</td></tr>
+        <tr><th>設立</th><td>2025年(規約施行:令和7年10月1日)</td></tr>
+        <tr><th>所在地</th><td>宮崎県西臼杵郡高千穂町大字三田井10-2</td></tr>
+        <tr><th>代表</th><td>工藤 天裕(高千穂高校魅力向上コーディネーター)</td></tr>
+        <tr><th>メンバー</th><td>佐藤 翔平(446株式会社)</td></tr>
+        <tr><th>アドバイザー</th><td>江原 太郎 氏(LOCAL BAMBOO株式会社)</td></tr>
+      </table>
+    </div>
+    <p class="copy">© 2026 ウゴノタケノコ All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+// mobile menu
+const hb=document.getElementById('hamburger'),menu=document.getElementById('menu');
+hb.addEventListener('click',()=>menu.classList.toggle('open'));
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+// scroll reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
